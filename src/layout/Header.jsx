@@ -5,12 +5,12 @@ import { UilBars, UilTimes } from '@iconscout/react-unicons'
 const Header = ({setMenuResponsive, menuResponsive}) => {
   return (
     <header className="bg-color-principal w-full">
-      <nav className="h-20 md:h-24">
-        <div className="flex justify-between items-center w-11/12 mx-auto md:hidden"> 
+      <nav className="h-20 lg:h-24">
+        <div className="flex justify-between items-center w-11/12 mx-auto lg:hidden"> 
           <Link to='/'>
             <img 
               src={Escudo}
-              className='z-20 w-24 absolute top-3 md:hidden'
+              className='z-20 w-24 absolute top-3 lg:hidden'
             />
           </Link>
 
@@ -18,15 +18,15 @@ const Header = ({setMenuResponsive, menuResponsive}) => {
             onClick={() => setMenuResponsive(!menuResponsive)}
           >
             {menuResponsive ? (
-              <UilTimes className="text-white block h-[4.5rem] w-[4.5rem] md:hidden hover:fill-yellow-500" />
+              <UilTimes className="text-white block h-[4.5rem] w-[4.5rem] lg:hidden hover:fill-yellow-500" />
             ) 
             : (
-              <UilBars className="text-white block h-[4.5rem] w-[4.5rem] md:hidden hover:fill-yellow-500" />
+              <UilBars className="text-white block h-[4.5rem] w-[4.5rem] lg:hidden hover:fill-yellow-500" />
             )}
           </div>
         </div>
 
-        <div className={`${menuResponsive ? 'left-0 z-10' : 'left-[-100%] z-0'} absolute w-full bg-blue-900/80 h-screen mt-2 menu-animation md:hidden`} >
+        <div className={`${menuResponsive ? 'left-0 z-10' : 'left-[-100%] z-0'} absolute w-full bg-blue-900/80 h-screen mt-2 menu-animation lg:hidden`} >
           <Link
             to='/'
             className="block text-center text-white font-bold border-b-[0.5px] border-cyan-600 py-4 text-lg hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 hover:border-none"
@@ -58,20 +58,20 @@ const Header = ({setMenuResponsive, menuResponsive}) => {
           >CONTACTO</Link>
         </div>
 
-        <div className="hidden md:visible md:flex gap-2 justify-between items-center w-[85%] h-24 m-auto">
+        <div className="hidden lg:visible lg:flex gap-2 justify-between items-center lg:w-[96.6%] 2xl:w-[60%] h-24 m-auto">
           <Link
             to='/'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >INICIO</Link>
 
           <Link
             to='/nosotros'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >NOSOTROS</Link>
 
           <Link
             to='/servicios'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-5 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >NUESTROS SERVICIOS</Link>
 
           <Link to='/'>
@@ -83,17 +83,17 @@ const Header = ({setMenuResponsive, menuResponsive}) => {
 
           <Link
             to='/inscripciones'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >INSCRIPCIONES</Link>
 
           <Link
             to='/instalaciones'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >INSTALACIONES</Link>
 
           <Link
             to='/contacto'
-            className="text-white font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 text-lg"
+            className="text-white font-normal lg:font-bold w-40 align-middle inline-block transition-all hover:text-blue-900 hover:bg-gradient-to-t to-yellow-300 from-yellow-500 text-center hover:py-9 2xl:text-lg lg:text-base"
           >CONTACTO</Link>
         </div>
       </nav>
